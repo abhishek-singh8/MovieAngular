@@ -4,6 +4,6 @@ export class MovieOMDB {
         public Year:string,
         public Released:string,
         public Production:string,
-        public Poster:string
+
     ){}
 }

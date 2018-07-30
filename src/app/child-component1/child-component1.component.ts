@@ -18,4 +18,8 @@ export class ChildComponent1Component implements OnInit {
     this._employeeService.getEmployees().subscribe(data=> this.employees=data);
     
   }
+  onDelete(movie){
+    this._employeeService.deleteMovie(movie.id).subscribe(res => console.log('Done'));
+    window.location.reload(true);
+  }
 }

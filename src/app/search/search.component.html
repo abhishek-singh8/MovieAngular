@@ -10,6 +10,10 @@
   <h6>{{omdbMovie.Year}}</h6>
   <h6>{{omdbMovie.Released}}</h6>
   <h6>{{omdbMovie.Production}}</h6>
+
+  <div align="center" (click)="onSubmit(omdbMovie)">
+    <button class="btn btn-primary" type="submit">Save</button> 
+  </div>
   <br>
   <br>
 </div>
