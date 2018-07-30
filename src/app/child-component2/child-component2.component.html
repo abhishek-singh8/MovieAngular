@@ -1,0 +1,36 @@
+<div align="center">
+  <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+    <br>
+      
+    <br>
+    
+    <div class="form-group">
+      <h3>Title of the movie</h3>
+      <input type="text"  alt="Submit" name="title" width="48" height="48" [(ngModel)]="movieModel.title">
+    </div>
+    <br>
+    
+    <div class="form-group">
+      <h3>Year of release of the movie</h3>
+      <input type="text"  alt="Submit" name="year" width="48" height="48" [(ngModel)]="movieModel.year">
+    </div>
+    <br>
+    
+    <div class="form-group">
+      <h3>ImdbId of the movie</h3>
+      <input type="text"  alt="Submit" name="imdbId" width="48" height="48" [(ngModel)]="movieModel.imdbId">
+    </div>
+    <br>
+    
+    <div class="form-group">
+      <h3>Type of the movie</h3>
+      <input type="text"  alt="Submit" name="type" width="48" height="48" [(ngModel)]="movieModel.type">
+    </div>
+    <br>
+
+    <button class="btn btn-primary" type="submit">Save to wishlist</button> 
+  <br>
+  <br>
+  </form>
+
+</div>

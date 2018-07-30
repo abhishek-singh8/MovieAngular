@@ -1,0 +1,16 @@
+<div align="center" (click)="onSearch()">
+  <input type="text"  alt="OmDb" name="type" width="48" height="4" [(ngModel)]="movieTitle" placeholder="Search OmDb database">
+  <br>
+  <br>
+  <button class="btn btn-primary" type="search">Search Movie DataBase</button>
+</div>
+
+<div *ngIf="omdbMovie" align="center">
+  <h6>{{omdbMovie.Title}}</h6>
+  <h6>{{omdbMovie.Year}}</h6>
+  <h6>{{omdbMovie.Released}}</h6>
+  <h6>{{omdbMovie.Production}}</h6>
+  <br>
+  <br>
+</div>
+
